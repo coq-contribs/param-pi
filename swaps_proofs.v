@@ -18,6 +18,7 @@ Require Import processus.
 Require Import fresh.
 Require Import typing_proofs.
 
+Unset Standard Proposition Elimination Names.
 
 Theorem swap_par_or_name :
  forall r p q : PP, pname (swap_par r p q) = swap_name (pname r) p q.

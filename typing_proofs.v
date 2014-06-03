@@ -17,6 +17,8 @@
 Require Import processus.
 Require Import fresh.
 
+Unset Standard Proposition Elimination Names.
+
 Theorem gettype_not_added_name :
  forall (G : env) (p q : PP) (t : type), p <> q -> addenv G p t q = G q.
 Proof.
